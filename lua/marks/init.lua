@@ -16,6 +16,8 @@ function M.set()
       M.mark_state:place_mark_cursor(input)
     end
     vim.cmd("normal! m" .. input)
+  else
+    vim.cmd("normal m" .. input)
   end
 end
 
